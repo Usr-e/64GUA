@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex布局</title>
+    <style>
+      body {
+        background-color: #eee;
+        margin: 0;
+      }
+      /* {
+        border: 1px solid black;
+      }*/
+      .flex {
+        display: flex;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .baise {
+        background-color: white;
+      }
+      .mg8 {
+        margin: 4px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+      .yinying {
+        box-shadow: 2px 2px 2px 2px #888888;
+      }
+      .jz {
+        justify-content: center;
+      }
+      .dq {
+        align-items: center;
+      }
+      .dq2 {
+        justify-content: space-evenly;
+      }
+      .zt {
+        font-size: 32px;
+      }
+      .zt1 {
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body class="flex" justify-content:space-between>
+    <!--left-->
+    <div style="flex: 1" class="flex baise yinying"></div>
+    <!--mid-->
+    <div class="flex1 flex column" style="flex: 6">
+      <!--head-->
+      <div style="height: 150px" class="baise yinying flex jz dq zt">
+        易经64卦
+      </div>
+      <!--content!!!!-->
+      <div class="flex1 flex column" style="overflow: auto">
+        <div style="height: 150px" class="flex mg8">
+          <div style="width: 150px" class="baise yinying mgr8 flex jz dq zt1">
+            上卦<br />
+            下卦
+          </div>
+          <div style="width: 150px" class="baise yinying mgr8 flex jz dq">
+            <img src="qian.png" alt="乾" width="50px" height="72px" />
+          </div>
+          <div style="width: 150px" class="baise yinying mgr8 flex jz dq">
+            <img src="dui.png" alt="兑" width="50px" height="72px" />
+          </div>
+          <div style="width: 150px" class="baise yinying mgr8 flex jz dq">
+            <img src="huo.png" alt="离" width="50px" height="72px" />
+          </div>
+          <div style="width: 150px" class="baise yinying mgr8 flex jz dq">
+            <img src="zhen.png" alt="震" width="50px" height="72px" />
+          </div>
+          <div style="width: 150px" class="baise yinying mgr8 flex jz dq">
+            <img src="xun.png" alt="巽" width="50px" height="72px" />
+          </div>
+          <div style="width: 150px" class="baise yinying mgr8 flex jz dq">
+            <img src="kan.png" alt="坎" width="50px" height="72px" />
+          </div>
+          <div style="width: 150px" class="baise yinying mgr8 flex jz dq">
+            <img src="gen.png" alt="艮" width="50px" height="72px" />
+          </div>
+          <div style="width: 150px" class="baise yinying mgr8 flex jz dq">
+            <img src="kun.png" alt="坤" width="50px" height="72px" />
+          </div>
+        </div>
+        <div style="height: 150px" class="flex mg8">
+          <div style="width: 150px" class="baise yinying mgr8 flex jz dq">
+            <img src="qian.png" alt="乾" width="50px" height="72px" />
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 zt1 flex column dq dq2"
+          >
+            <div>乾卦</div>
+            <div>乾为天</div>
+            <div>刚健中正</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>夬卦</div>
+            <div>泽天夬</div>
+            <div>决而能和</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>大有卦</div>
+            <div>火天大有</div>
+            <div>顺天依时</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>大壮卦</div>
+            <div>雷天大壮</div>
+            <div>壮勿妄动</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>小畜卦</div>
+            <div>风天小畜</div>
+            <div>畜养待进</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>需卦</div>
+            <div>水天需</div>
+            <div>守正待机</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>大畜卦</div>
+            <div>山天大畜</div>
+            <div>止而不止</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>泰卦</div>
+            <div>地天泰</div>
+            <div>应时而变</div>
+          </div>
+        </div>
+        <div style="height: 150px" class="flex mg8">
+          <div style="width: 150px" class="baise yinying mgr8 flex jz dq">
+            <img src="dui.png" alt="兑" width="50px" height="72px" />
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>履卦</div>
+            <div>天泽履</div>
+            <div>脚踏实地</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>兑卦</div>
+            <div>兑为泽</div>
+            <div>刚内柔外</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>睽卦</div>
+            <div>火泽睽</div>
+            <div>异中求同</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>归妹卦</div>
+            <div>雷泽归妹</div>
+            <div>立家兴业</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>中孚卦</div>
+            <div>风泽中孚</div>
+            <div>诚信立身</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>节卦</div>
+            <div>水泽节</div>
+            <div>万物有节</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>损卦</div>
+            <div>山泽损</div>
+            <div>损益制衡</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>临卦</div>
+            <div>地泽临</div>
+            <div>教民保民</div>
+          </div>
+        </div>
+        <div style="height: 150px" class="flex mg8">
+          <div style="width: 150px" class="baise yinying mgr8 flex jz dq">
+            <img src="huo.png" alt="离" width="50px" height="72px" />
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>同人卦</div>
+            <div>天火同人</div>
+            <div>上下和同</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>革卦</div>
+            <div>泽火革</div>
+            <div>顺天应人</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>离卦</div>
+            <div>离为火</div>
+            <div>附和依托</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>丰卦</div>
+            <div>雷火丰</div>
+            <div>日中则斜</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>家人</div>
+            <div>风火家人</div>
+            <div>诚威治业</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>即济卦</div>
+            <div>水火既济</div>
+            <div>盛极将衰</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>贲卦</div>
+            <div>山火贲</div>
+            <div>饰外扬质</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>明夷卦</div>
+            <div>地火明夷</div>
+            <div>晦而转明</div>
+          </div>
+        </div>
+        <div style="height: 150px" class="flex mg8">
+          <div style="width: 150px" class="baise yinying mgr8 flex jz dq">
+            <img src="zhen.png" alt="震" width="50px" height="72px" />
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>无妄卦</div>
+            <div>天雷无妄</div>
+            <div>无妄而得</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>随卦</div>
+            <div>泽雷随</div>
+            <div>随时变通</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>噬嗑卦</div>
+            <div>火雷噬嗑</div>
+            <div>刚柔相济</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>震卦</div>
+            <div>震为雷</div>
+            <div>临危不乱</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>益卦</div>
+            <div>风雷益</div>
+            <div>损上益下</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>屯卦</div>
+            <div>水雷屯</div>
+            <div>起始维艰</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>颐卦</div>
+            <div>山雷颐</div>
+            <div>纯正以养</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>复卦</div>
+            <div>地雷复</div>
+            <div>寓动于顺</div>
+          </div>
+        </div>
+        <div style="height: 150px" class="flex mg8">
+          <div style="width: 150px" class="baise yinying mgr8 flex jz dq">
+            <img src="xun.png" alt="巽" width="50px" height="72px" />
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>姤卦</div>
+            <div>天风姤</div>
+            <div>天下有风</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>大过卦</div>
+            <div>泽风大过</div>
+            <div>非常行动</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>鼎卦</div>
+            <div>火风鼎</div>
+            <div>稳重图变</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>恒卦</div>
+            <div>雷风恒</div>
+            <div>恒心有成</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>巽卦</div>
+            <div>巽为风</div>
+            <div>谦逊受益</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>井卦</div>
+            <div>水风井</div>
+            <div>求贤若渴</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>蛊卦</div>
+            <div>山风蛊</div>
+            <div>振疲起衰</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>升卦</div>
+            <div>地风升</div>
+            <div>柔顺谦虚</div>
+          </div>
+        </div>
+        <div style="height: 150px" class="flex mg8">
+          <div style="width: 150px" class="baise yinying mgr8 flex jz dq">
+            <img src="kan.png" alt="坎" width="50px" height="72px" />
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>讼卦</div>
+            <div>天水讼</div>
+            <div>慎争戒讼</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>困卦</div>
+            <div>泽水困</div>
+            <div>困境求通</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>未济卦</div>
+            <div>火水未济</div>
+            <div>事业未竟</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>解卦</div>
+            <div>雷水解</div>
+            <div>柔道致治</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>涣卦</div>
+            <div>风水涣</div>
+            <div>拯救涣散</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>坎卦</div>
+            <div>坎为水</div>
+            <div>行险用险</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>蒙卦</div>
+            <div>山水蒙</div>
+            <div>启蒙奋发</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>师卦</div>
+            <div>地水师</div>
+            <div>行险而顺</div>
+          </div>
+        </div>
+        <div style="height: 150px" class="flex mg8">
+          <div style="width: 150px" class="baise yinying mgr8 flex jz dq">
+            <img src="kan.png" alt="坎" width="50px" height="72px" />
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>遁卦</div>
+            <div>天山遁</div>
+            <div>遁世救世</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>咸卦</div>
+            <div>泽山咸</div>
+            <div>相互感应</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>旅卦</div>
+            <div>火山旅</div>
+            <div>依义顺时</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>小过卦</div>
+            <div>雷山小过</div>
+            <div>行动有度</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>渐卦</div>
+            <div>风山渐</div>
+            <div>渐进蓄德</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>骞卦</div>
+            <div>水山骞</div>
+            <div>险阻在前</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>艮卦</div>
+            <div></div>
+            <div></div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>谦卦</div>
+            <div>地山谦</div>
+            <div>内高外低</div>
+          </div>
+        </div>
+        <div style="height: 150px" class="flex mg8">
+          <div style="width: 150px" class="baise yinying mgr8 flex jz dq">
+            <img src="kun.png" alt="坤" width="50px" height="72px" />
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>否卦</div>
+            <div>天地否</div>
+            <div>不交不通</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>萃卦</div>
+            <div>泽地萃</div>
+            <div>荟萃聚集</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>晋卦</div>
+            <div>火地晋</div>
+            <div>求进发展</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>豫卦</div>
+            <div>雷地豫</div>
+            <div>顺时依势</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>观卦</div>
+            <div>风地观</div>
+            <div>观下瞻上</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>比卦</div>
+            <div>水地比</div>
+            <div>诚信团结</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>剥卦</div>
+            <div>山地剥</div>
+            <div>顺势而止</div>
+          </div>
+          <div
+            style="width: 150px"
+            class="baise yinying mgr8 flex column dq dq2"
+          >
+            <div>坤卦</div>
+            <div>坤为地</div>
+            <div>柔顺伸展</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--right-->
+    <div style="flex: 1" class="flex baise"></div>
+  </body>
+</html>
